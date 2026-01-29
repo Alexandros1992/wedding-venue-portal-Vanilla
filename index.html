@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Venue Booking</title>
+</head>
+<body>
+    <header>
+        <h1>Wedding Venue Booking Portal</h1>
+        <p>Book your dream wedding venue.</p>
+    </header>
+    <main>
+        <section class="venues">
+            <div class="venue-card">
+                <h2>Royal Garden Hall</h2>
+                <p>Capacity: 300 guests</p>
+                <p>Location: Athens</p>
+                <button onclick="selectVenue('Royal Garden Hall')">Book Now</button>
+            </div>
+            <div class="venue-card">
+                <h2>Sunset Beach Resort</h2>
+                <p>Capacity: 200 guests</p>
+                <p>Location: Santorini</p>
+                <button onclick="selectVenue('Sunset Beach Resort')">Book Now</button>
+            </div>
+            <div class="venue-card">
+                <h2>Olive Grove Estate</h2>
+                <p>Capacity: 150 guests</p>
+                <p>Location: Crete</p>
+                <button onclick="selectVenue('Olive Grove Estate')">Book Now</button>
+            </div>
+        </section>
+        <section class="booking-form hidden" id="bookingForm">
+            <h2 id="selectedVenue"></h2>
+
+            <form action="" id="form">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="date">Preferred Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="guests">Number of Guests:</label>
+                <input type="number" id="guests" name="guests" required>
+
+                <button type="submit">Submit Booking</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
